@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+ <title>CSS3 Animation</title>
+<style>
+  /* Point #1 */
+  @-webkit-keyframes myAnimation {
+    0% {opacity:1;}
+    33% {opacity:0;}
+    66% {opacity:0;}
+    100% {opacity:1;}
+  }
+  /* Point #2 */
+  #f1 img {position:absolute;}
+  /* Point #3 */
+  #f1 img {
+    -webkit-animation-name: myAnimation;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+  }
+  /* Point #4 */
+  #f1 img:nth-of-type(1) {-webkit-animation-delay: 10s;}
+  #f1 img:nth-of-type(2) {-webkit-animation-delay: 5s;}
+  #f1 img:nth-of-type(3) {-webkit-animation-delay: 0s;}
+  </style>
+</head>
+
+<body>
+<header>
+  <nav> <!-- Navigation Section  -->
+    <ul>
+      <li><a href="./">Chapter 03 Homepage</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section> <!-- Main body portion of site -->
+  <!-- Point #5 -->
+   <div id="f1">
+    <img src="img1.png">
+    <img src="img2.png">
+    <img src="img3.png">
+   </div>
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<footer>
+ <nav> <!-- This is the site map -->
+  <ul>
+    <li><a href="./">Chapter 03 Homepage</a></li>
+  </ul>
+ </nav>
+</footer>
+</body>
+
+</html>
